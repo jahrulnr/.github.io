@@ -1,3 +1,7 @@
+body {
+  background: var(--bs-dark);
+}
+
 .header {
   text-align: center;
   width: 100%;
