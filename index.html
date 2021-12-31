@@ -56,7 +56,7 @@
           {
             url: "./data/json/info.json", 
             success: function(result){
-              $("#info .modal-body").html(result);
+              $("#info .modal-body").html(JSON.parse(result));
             }
           });
       });
