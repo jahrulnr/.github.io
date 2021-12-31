@@ -5,6 +5,13 @@
   color: var(--bs-light);
   padding: .7rem;
   height: 3.5rem;
+  position: relative;
+  z-index: 10;
+}
+
+nav {
+  position: relative;
+  z-index: 10;
 }
 
 a {
@@ -22,6 +29,11 @@ a {
 .text-justify {
   text-align: justify;
 }
+
+#profil-img {
+  margin-bottom: .5rem;
+}
+
 #bio .modal-body div a {
   color: var(--bs-teal ) !important;
   text-decoration: none;
@@ -29,8 +41,9 @@ a {
 
 .card-center {
   position: relative;
+  width: 90%;
   top: 40%;
-  left: 25%;
+  left: 45%;
   transform: translate(-50%, -50%);
 }
 
@@ -41,4 +54,49 @@ footer {
   margin: auto 0;
   height: 3rem;
   padding: 0.7rem !important;
+}
+
+.wait {
+  display:    none;
+  position:   fixed;
+  z-index:    1000;
+  top:        0;
+  left:       0;
+  height:     100%;
+  width:      100%;
+  background: rgba( 255, 255, 255, .8 ) 
+              url('http://i.stack.imgur.com/FhHRx.gif') 
+              50% 50% 
+              no-repeat;
+}
+
+body.loading .wait {
+    overflow: hidden;   
+}
+
+body.loading .wait {
+    display: block;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .card-center {
+    width: 70%;
+    left: 35%;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
 }

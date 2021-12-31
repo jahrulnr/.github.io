@@ -20,24 +20,26 @@
     <header class="header">
       <h4 class="fw-bold">Jahrulnr</h4>
     </header>
+
     <nav class="nav bg-secondary p-1">
       <a class="nav-link btn btn-dark btn-sm" href="/">Beranda</a>
-      <a class="nav-link bio" href="#" data-bs-toggle="modal" data-bs-target="#bio">About</a>
+      <a class="nav-link bio" href="#" data-bs-toggle="modal" data-bs-target="#bio">Profil</a>
     </nav>
 
     <div class="container-fluid bg-dark">
-      <div class="card m-auto w-50 card-center">
+      <div class="card m-auto w-70 card-center">
         <div class="card-body">
           <!-- Sambutan -->
           <h3 class="text-center border-bottom pb-3">Selamat Datang</h3>
 
           <!-- Isi -->
-          <p class="">
-            &nbsp;&nbsp;
+          <p class="text-justify" id="sambutan">
+            Hello!<br/>
+            &nbsp;&nbsp;Selamat datang di web sederhana ini. Ingin melihat projek yang sudah diposting? Silakan klik <i>button</i> &quot;Projek&quot; di kanan bawah <i>card</i> ini ya.
           </p>
         </div>
         <div class="card-footer text-end">
-          <button class="btn btn-secondary">Projek</button>
+          <a href="//github.com/jahrulnr" class="btn btn-secondary text-white">Projek</a>
         </div>
       </div>
     </div>
@@ -51,7 +53,7 @@
       <div class="modal-dialog">
         <div class="modal-content bg-dark text-white">
           <div class="modal-header">
-            <h5 class="modal-title" id="modal-bio">About</h5>
+            <h5 class="modal-title" id="modal-bio">Profil</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -64,6 +66,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Loading -->
+    <div class="load"></div>
   </body>
 
   <!-- Core Script -->
