@@ -1,0 +1,9 @@
+a {
+  color: black !important;
+}
+.bg-secondary .nav-link {
+  color: white !important;
+}
+#bio .modal-body {
+  text-align: justify;
+}
