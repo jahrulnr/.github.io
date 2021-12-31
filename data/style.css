@@ -7,3 +7,7 @@ a {
 #bio .modal-body {
   text-align: justify;
 }
+#bio .modal-body div a {
+  color: var(--bs-teal ) !important;
+  text-decoration: none;
+}
