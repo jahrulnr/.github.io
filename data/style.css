@@ -75,11 +75,11 @@ footer {
 }
 
 body.loading .wait {
-    overflow: hidden;   
+    overflow: hidden !important;   
 }
 
 body.loading .wait {
-    display: block;
+    display: block !important;
 }
 
 /*Small devices (landscape phones, 576px and up)*/

@@ -26,6 +26,12 @@ $(document).ready(function(){
         var kontak = "<center>" + img + "<br/>" + email + "<br/>" + ig + "</center><hr/>";
 
         $("#bio .modal-body div").html(kontak);
+      },
+      beforeSend: function() {
+        $body.addClass("loading");
+      },
+      complete: function(){
+        $body.removeClass("loading");
       }
     });
 
@@ -33,6 +39,12 @@ $(document).ready(function(){
       url: "./data/json/info.json", 
       success: function(result){
         $("#bio .modal-body p").html(JSON.parse(result));
+      },
+      beforeSend: function() {
+        $body.addClass("loading");
+      },
+      complete: function(){
+        $body.removeClass("loading");
       }
     });
   });
