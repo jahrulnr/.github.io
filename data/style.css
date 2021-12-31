@@ -1,13 +1,44 @@
+.header {
+  text-align: center;
+  width: 100%;
+  background: var(--bs-dark);
+  color: var(--bs-light);
+  padding: .7rem;
+  height: 3.5rem;
+}
+
 a {
   color: black !important;
 }
+
 .bg-secondary .nav-link {
   color: white !important;
 }
-#bio .modal-body {
+
+.container-fluid {
+  height: 75vh;
+}
+
+.text-justify {
   text-align: justify;
 }
 #bio .modal-body div a {
   color: var(--bs-teal ) !important;
   text-decoration: none;
+}
+
+.card-center {
+  position: relative;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  color: var(--bs-gray-400);
+  background: var(--bs-secondary);
+  text-align: center;
+  margin: auto 0;
+  height: 3rem;
+  padding: 0.7rem !important;
 }

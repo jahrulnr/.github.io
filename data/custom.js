@@ -1,3 +1,6 @@
+var d = new Date();
+$("#year").html(d.getFullYear());
+
 $(document).ready(function(){
   $('.bio').click(function(){
     $.ajax({
