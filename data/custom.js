@@ -38,7 +38,7 @@ $(document).ready(function(){
     $.ajax({
       url: "./data/json/info.json", 
       success: function(result){
-        $("#bio .modal-body p").html(JSON.parse(result));
+        $("#bio .modal-body p").html(result);
       },
       beforeSend: function() {
         $body.addClass("loading");
