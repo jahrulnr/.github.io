@@ -36,7 +36,7 @@ $(document).ready(function(){
     });
 
     $.ajax({
-      url: "./data/json/info.json", 
+      url: "./data/json/info.txt", 
       success: function(result){
         $("#bio .modal-body p").html(result);
       },
